@@ -1,0 +1,172 @@
+*{
+	font-family: Verdana;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.nome{
+	width: 500px;
+	height: 20px;
+	border: 2px solid black;
+	border-radius: 5px;
+	font-size: 15px;
+	box-shadow: 5px 5px 10px #888888;
+}
+
+.corposite{
+	width: 1200px;
+	margin: auto;
+}	
+
+.formulario{
+	float: right;	
+	width: 504px;
+	height: 630px;
+	margin-top: 55px;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.listamaster{
+	padding-top: 60px;
+}
+
+.lista{
+	overflow:auto;
+	height: 300px;
+	width: 410px;
+}
+
+.lista li{
+	list-style: none;
+	padding-top: 5px;
+	cursor: pointer;
+}
+
+.lista li:hover{
+	text-decoration: underline;
+}
+
+.menus{
+	height: 45px;
+	width: 100%;
+	background-color: #2b333e;
+	position: fixed; 
+}
+
+.menuinterno{
+	width: 1000px;
+	margin: auto;
+}
+
+@media screen and (max-width: 1100px){
+	.enviar{
+		display: none;
+	}
+	.listamaster{
+		display: none;
+	}
+	.limpar{
+		display: none;
+	}
+	.formulario{
+		float: left;
+		margin-left: 0px;
+		margin-top: 0px;
+	}
+	.corposite{
+		width: 500px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	
+	.menus{
+		display: none;
+	}
+}
+
+.titulo{
+	color: white;
+	float: left;
+	line-height: 45px;
+	font-size: 20px;
+	font-weight: bold;
+
+}
+
+/* Código de menu temporario */
+
+.navegacao{
+	float: right;
+}
+
+.navegacao ul,
+.navegacao li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.navegacao li{
+	float: right;
+	padding-right: 10px;
+	padding-left: 10px;
+	line-height: 45px;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.navegacao li a{
+	text-decoration: none;
+	color: white;
+}
+
+.navegacao li:hover{
+	background-color: #00aaff;
+}
+
+/* Fim código de menu temporario */
+
+.enviar{
+	position: absolute;
+	right: 50%;
+	top: 200px;
+}
+
+.enviar button{
+	width: 130px;
+	height: 40px;
+}
+
+
+
+.limpar{
+	position: absolute;
+	right: 50%;
+	top: 250px;
+}
+
+.limpar button{
+	width: 130px;
+	height: 40px;
+}
+
+.usuario{
+	color: black;
+	text-decoration: none;
+}
+
+/* Código css responsivo */
+
+/* div de alerta de duplicidade */
+
+.duplicado{
+	position: absolute;
+	width: 250px;
+	margin: auto;
+	padding-top: 100px;
+}
